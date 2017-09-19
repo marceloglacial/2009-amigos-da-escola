@@ -1,0 +1,423 @@
+/* Projeto: Amigos da Escola
+   Desenvolvedor: Marcelo Glacial
+   Inicio: 01/12/2009
+   Ultima alteracao: 10/12/2009
+*/
+
+
+/* Reset  
+---------------------------------------------------------------------------------- */
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	background: url("../img/fundo_html.jpg") top repeat-y #266ACF;
+}
+body {
+	background: url("../img/fundo_site.jpg") top no-repeat;
+}
+hr {
+	display:none;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+.hide {
+	display:none;
+}
+
+/* Site
+---------------------------------------------------------------------------------- */
+#Site {
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+
+/* Atalhos
+---------------------------------------------------------------------------------- */
+#Atalhos {
+	display:none;
+}
+
+/* Cabecalho
+---------------------------------------------------------------------------------- */
+#Cabecalho {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#Cabecalho h1 a {
+	display:block;
+	text-indent:-9999px;
+	width:250px;
+	height:250px;
+}
+
+/* Menu
+---------------------------------------------------------------------------------- */
+#Menu {
+	position:absolute;
+	top:40px;
+	right:55px;
+}
+#Menu h2 {
+	display:none;
+}
+#Menu ul {
+	list-style:none;
+}
+#Menu ul li {
+	float:left;
+}
+#Menu ul li a {
+	display:block;
+	text-indent:-9999px;
+	height:35px;
+	margin-left:15px;
+}
+#Menu li.faleconosco a {
+	width:120px;
+}
+#Menu li.noticias a {
+	width:75px;
+}
+#Menu li.cadastro a {
+	width:180px;
+}
+#Menu li.oprojeto a {
+	width:85px;
+}
+#Menu li.ativo a,
+#Menu li a:hover {
+	border-bottom:solid 3px #D8E8FF;
+}
+/* Conteudo
+---------------------------------------------------------------------------------- */
+#Conteudo {
+	width:700px;
+	padding:100px 0 20px 250px;
+}
+body.home #Conteudo {
+	background: url("../img/fundo_conteudo_home.jpg") 138px 350px no-repeat;
+	width:660px;
+	padding:155px 0 20px 270px;
+}
+body.contato #Conteudo {
+	height:500px;
+}
+/* Destaques
+---------------------------------------------------------------------------------- */
+#Destaques {
+	position:relative;
+	height:200px;
+	overflow:hidden;
+}
+#Destaques  h2 {
+	display:none;
+}
+#Destaques .chamada  {
+	padding:10px 320px 0 50px;
+
+}
+#Destaques .chamada  h3 a {
+	font-family: "Trebuchet MS", Arial;
+	font-size:150%;
+	font-weight:normal;
+	color:#000;
+}
+#Destaques .chamada  p a {
+	font-family: "Trebuchet MS", Arial;
+	font-size:100%;
+	color:#999;
+}
+#Destaques .foto {
+	position:absolute;
+	top:10px;
+	right:40px;
+	display:block;
+	width:274px;
+	height:189px;
+	float:right;
+	background: url("../img/fundo_foto.jpg") center top no-repeat;
+}
+#Destaques .chamada  img {
+	width:250px;
+	height:166px;
+	margin:9px 0 0 11px;
+}
+#Navegacao  a {
+	display:block;
+	width:24px;
+	height:100px;
+	text-indent:-9999px;
+	
+	position:absolute;
+	top:50px;
+}
+#Navegacao a.anterior {
+	background: url("../img/destaque_anterior.jpg") left top no-repeat;
+	left:0;
+}
+#Navegacao a.proxima {
+	background: url("../img/destaque_proxima.jpg") left top no-repeat;
+	right:0;
+}
+
+/* Ultimas Noticias
+---------------------------------------------------------------------------------- */
+#Ultimas {
+	padding:50px 0 0 45px;
+}
+body.home #Ultimas {
+	width:350px;
+	float:left;
+}
+#Ultimas  h2  a{
+	display:block;
+	margin-bottom:10px;
+	text-indent:-9999px;
+	background: url("../img/ultimas_titulo.jpg") left top no-repeat;
+	height:67px;
+	position:relative;
+	left:-20px;
+}
+body.home #Ultimas h2 a {
+	width:250px;
+	height:40px;
+	background:none;
+	left:0;
+}
+#Ultimas ul {
+	list-style:none;
+	padding-right:25px;
+}
+#Ultimas li a {
+	display:block;
+	padding:5px 0px 5px 80px;
+	border-bottom:solid 1px #F0F0F0;
+	
+	font-family: Arial, Verdana;
+	font-size:80%;
+	color:#666;
+	position:relative;
+}
+#Ultimas li a strong{
+	font-weight:normal;
+	position:absolute;
+	left:0;
+}
+#Ultimas li a:hover {
+	text-decoration:none;
+	background:#F1F1F1;
+}
+
+/* Enquete
+---------------------------------------------------------------------------------- */
+#Enquete {
+	width:250px;
+	margin:40px 0 0 400px;
+	
+	font-family: "Trebuchet MS", Arial;
+	font-size:90%;
+	color:#3399CC;
+}
+#Enquete h2 {
+	width:250px;
+	height:45px;
+	text-indent:-9999px;
+	background: url("../img/enquete_titulo.jpg") right top no-repeat;	
+}
+#Enquete form {
+	background:#EAF5FA;
+	padding:15px 20px;
+	margin:15px 10px 15px 20px;
+}
+#Enquete form  p {
+	font-weight:bold;
+	line-height:1.0em;
+	padding-bottom:15px;
+	font-size:110%;
+}
+
+#Enquete form input.botao {
+	width:180px;
+	margin-top:15px;
+}
+
+
+/* Texto
+---------------------------------------------------------------------------------- */
+#Texto {
+	padding:20px 50px;
+}
+#Texto h3 {
+	font-family: "Trebuchet MS", Arial;
+	font-size:170%;
+	clear:both;
+	
+	border-bottom:solid 1px #CCC;
+	padding:0 0 10px 0;
+	margin:0 0 10px 0;
+}
+#Texto h4 {
+	font-family: "Trebuchet MS", Arial;
+	font-size:100%;
+	font-weight:normal;
+	color:#999;
+	
+	padding:0 0 10px 0;
+	clear:both;
+	float:left;
+}
+#Texto p {
+	font-family: Arial, Verdana;
+	font-size:85%;
+	color:#555;
+	line-height:1.7em;
+	padding-bottom:1.7em;
+	clear:both;
+}
+#Texto img {
+	background: url("../img/fundo_foto.jpg") center top no-repeat;
+	padding:10px 10px 20px 10px;
+	width:249px;
+	height:165px;
+	float:right;
+}
+#Ferramentas {
+	float:right;
+	width:400px;
+	padding:2px 0 20px 0;
+}
+#Ferramentas ul {
+	list-style:none;
+	float:right;
+}
+#Ferramentas ul li {
+	float:left;
+}
+#Ferramentas ul li a {
+	display:block;
+	width:18px;
+	height:16px;
+	background: url("../img/ferramentas_fundo.jpg") no-repeat;
+	text-indent:-9999px;
+	float:left;
+	margin-left:5px;
+}
+#Ferramentas ul li a:hover {
+	background-position: 0 -16px;
+}
+#Ferramentas ul li.enviar a {
+	background-position: -25px 0;
+}
+#Ferramentas ul li.aumentar a {
+	background-position: -50px 0;
+}
+#Ferramentas ul li.diminuir a {
+	background-position: -75px 0;
+}
+#Ferramentas ul li.enviar a:hover {
+	background-position: -25px -16px;
+}
+#Ferramentas ul li.aumentar a:hover {
+	background-position: -50px -16px;
+}
+#Ferramentas ul li.diminuir a:hover {
+	background-position: -75px -16px;
+}
+
+/* Enquete
+---------------------------------------------------------------------------------- */
+#Comente {
+	padding:0 30px;
+}
+#Comente fieldset{
+	border:none;
+	background: url("../img/comentarios_titulo.jpg") left top no-repeat;
+	padding:70px 30px 0 20px;
+}
+body.contato #Comente fieldset{
+	background: url("../img/contato_titulo.jpg") left 20px no-repeat;
+	padding-top:90px;
+}
+body.contato #Conteudo {
+	padding-top:140px;
+}
+body.contato #Contato h2 {
+	display:none;
+}
+#Comente legend {
+	display:none;
+}
+#Comente label {
+	display:block;
+	float:left;
+	clear:left;
+	width:130px;
+	
+	text-align:right;
+	padding:0 10px 15px 0;
+
+	font-family: "Trebuchet MS", Arial;
+	font-size:100%;
+	color:#666;
+}
+#Comente input,
+#Comente textarea{
+	float:left;
+	padding:4px;
+	width:420px;
+	border:solid 1px #CCC;
+}
+#Comente input:focus,
+#Comente textarea:focus{
+	border:solid 1px #666;
+}
+
+#Comente .botao {
+	float:left;
+	clear:left;
+	margin:7px 0 0 140px;
+	width:200px;
+	height:30px;
+}
+
+/* Rodape
+---------------------------------------------------------------------------------- */
+#Rodape {
+	clear:both;
+	background: url("../img/rodape_fundo.jpg") right top no-repeat;		
+	margin-right:19px;
+	height:88px;
+	position:relative;
+}
+#Rodape .adr {
+	display:none;
+}
+#Rodape #hcard-TV-Verdes-Mares  a {
+	display:block;
+	background: url("../img/rodape_tvm.jpg") left top no-repeat;
+	text-indent:-9999px;
+	width:96px;
+	height:76px;
+	
+	position:absolute;
+	left:120px;
+	top:-150px;
+}
+#Rodape #hcard-Globo  a {
+	display:block;
+	background: url("../img/rodape_globo.jpg") left top no-repeat;
+	text-indent:-9999px;
+	width:67px;
+	height:62px;
+	position:absolute;
+	left:135px;
+	top:-50px;
+}
